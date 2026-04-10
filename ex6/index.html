@@ -1,0 +1,30 @@
+<div id="app">
+  <button @click="show = !show">切換顯示</button>
+  <p v-if="show">👋 你看到我了！</p>
+  <p v-else>（已隱藏）</p>
+</div>
+
+<script>
+Vue.createApp({
+  data() {
+    return { show: true }
+  }
+}).mount("#app")
+</script>
+<div id="app">
+  <ul>
+    <li v-for="fruit in fruits" :key="fruit">
+      {{ fruit }}
+    </li>
+  </ul>
+</div>
+
+<script>
+Vue.createApp({
+  data() {
+    return {
+      fruits: ["蘋果", "香蕉", "芒果", "草莓"]
+    }
+  }
+}).mount("#app")
+</script>
