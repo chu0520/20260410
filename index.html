@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0410 上課實作目錄</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffb6d9 0%, #ff69b4 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        .exercises-list {
+            display: grid;
+            gap: 12px;
+        }
+        .exercise-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background: #fff0f6;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            border-left: 4px solid #ff69b4;
+            transition: all 0.3s ease;
+        }
+        .exercise-item:hover {
+            background: #ff69b4;
+            color: white;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+        }
+        .exercise-number {
+            font-weight: bold;
+            font-size: 18px;
+            margin-right: 15px;
+            min-width: 40px;
+        }
+        .exercise-title {
+            flex: 1;
+            font-size: 16px;
+        }
+        .exercise-arrow {
+            font-size: 20px;
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+        .exercise-item:hover .exercise-arrow {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👨‍💻 0410 上課實作</h1>
+        <p class="subtitle">Vue.js 學習路程</p>
+        <p style="text-align: center; color: #999; font-size: 14px; margin-bottom: 20px;">
+            姓名：朱玉萍 | 學號：413730242
+        </p>
+        
+        <div class="exercises-list">
+            <a href="ex1/index.html" class="exercise-item">
+                <span class="exercise-number">01</span>
+                <span class="exercise-title">基本變數與 DOM 操作</span>
+                <span class="exercise-arrow">→</span>
+            </a>
+            
+            <a href="ex2/index.html" class="exercise-item">
+                <span class="exercise-number">02</span>
+                <span class="exercise-title">我的第一個 Vue 頁面</span>
+                <span class="exercise-arrow">→</span>
+            </a>
+            
+            <a href="ex3/index.html" class="exercise-item">
+                <span class="exercise-number">03</span>
+                <span class="exercise-title">資料綁定</span>
+                <span class="exercise-arrow">→</span>
+            </a>
+            
+            <a href="ex4/index.html" class="exercise-item">
+                <span class="exercise-number">04</span>
+                <span class="exercise-title">方法 (methods)</span>
+                <span class="exercise-arrow">→</span>
+            </a>
+            
+            <a href="ex5/index.html" class="exercise-item">
+                <span class="exercise-number">05</span>
+                <span class="exercise-title">雙向綁定 (v-model)</span>
+                <span class="exercise-arrow">→</span>
+            </a>
+            
+            <a href="ex6/index.html" class="exercise-item">
+                <span class="exercise-number">06</span>
+                <span class="exercise-title">條件與迴圈</span>
+                <span class="exercise-arrow">→</span>
+            </a>
+            
+            <a href="ex7/index.html" class="exercise-item">
+                <span class="exercise-number">07</span>
+                <span class="exercise-title">計算屬性 (computed)</span>
+                <span class="exercise-arrow">→</span>
+            </a>
+            
+            <a href="ex8/index.html" class="exercise-item">
+                <span class="exercise-number">08</span>
+                <span class="exercise-title">動態樣式與 CSS Class</span>
+                <span class="exercise-arrow">→</span>
+            </a>
+            
+            <a href="ex9/index.html" class="exercise-item">
+                <span class="exercise-number">09</span>
+                <span class="exercise-title">待辦事項清單</span>
+                <span class="exercise-arrow">→</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
