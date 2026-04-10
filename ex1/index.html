@@ -1,0 +1,12 @@
+<p id="msg"></p>
+<script>
+  let name = "小明"
+  document.getElementById("msg").textContent = "你好，" + name
+  // 每次資料改變都要手動更新畫面
+</script><p>{{ message }}</p>
+<script>
+  // 只要改 message，畫面自動更新！
+  data() 
+    return { message: "你好，小明" }
+  
+</script>
